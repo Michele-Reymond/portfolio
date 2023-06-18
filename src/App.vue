@@ -23,13 +23,17 @@ const motionHover = ref(false)
   <main>
     <!-- Main text -->
     <div class="flex justify-center items-center min-h-screen absolute">
-      <h1>Hello!<br>Moi c'est 
-      <a class="home-link" id="michele" href="#" @click="meShow = !meShow" @mouseover="meHover = true" @mouseout="meHover = false">Michèle</a>.<br> Je fais du 
-        <a class="home-link" id="motion" href="#" @click="motionShow = !motionShow" @mouseover="motionHover = true" @mouseout="motionHover = false">motion</a>, de 
-        <a id="illu" class="home-link" href="#" @click="illuShow = !illuShow" @mouseover="illuHover = true" @mouseout="illuHover = false">l'illu</a>
-         et de la 
-         <a id="prog" class="home-link" href="#" @click="progShow = !progShow" @mouseover="progHover = true" @mouseout="progHover = false">prog</a>.
-      </h1>
+      <div class="flex flex-col justify-center items-center">
+        <h1>Hello!</h1>
+        <h1 class="h-[79px]">Moi c'est 
+        <a class="home-link" id="michele" href="#" @click="meShow = !meShow" @mouseover="meHover = true" @mouseout="meHover = false">Michèle</a>.</h1>
+        <h1>Je fais du 
+          <a class="home-link" id="motion" href="#" @click="motionShow = !motionShow" @mouseover="motionHover = true" @mouseout="motionHover = false">motion</a>, de 
+          <a id="illu" class="home-link" href="#" @click="illuShow = !illuShow" @mouseover="illuHover = true" @mouseout="illuHover = false">l'illu</a>
+           et de la 
+           <a id="prog" class="home-link" href="#" @click="progShow = !progShow" @mouseover="progHover = true" @mouseout="progHover = false">prog</a>.
+        </h1>
+      </div>
     </div>
 
     <!-- CV -->
@@ -168,27 +172,40 @@ const motionHover = ref(false)
     transition: all .4s ease;
   }
 
+  #michele {
+    display: inline-block;
+    width: 272px;
+  }
+
   #michele:hover {
-    color: white;
+    font-family: Ahsing;
+    text-transform: lowercase;
+    letter-spacing: 3px;
+    /* color: white; */
+    /* -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black; */
+    
+    /* color: white;
     text-decoration: underline;
-    text-decoration-thickness: 12px;
+    text-decoration-thickness: 12px; */
   }
 
   #motion:hover {
     color: #7000FF;
-    text-decoration: wavy underline;
+    text-decoration: dotted underline;
     text-decoration-thickness: 8px;
+    text-underline-offset: 8px;
   }
 
   #illu:hover {
-    background-color: #FB98DF;
+    color: #FB98DF;
+    text-decoration: wavy underline;
+    text-decoration-thickness: 8px;
+    text-underline-offset: 12px;
   }
   
   #prog:hover {
-    color: #FF7A00;
-    text-decoration: dotted underline;
-    text-decoration-thickness: 8px;
-    text-underline-offset: 18px;
+    background-color: #FF7A00;
   }
 
   #texture-cv {
@@ -208,7 +225,7 @@ const motionHover = ref(false)
     background: url(assets/img/texture-pink.png);
     width: 100%;
     background-position: right;
-    background-size: contain;
+    background-size: 30%;
     background-repeat: no-repeat;
     mix-blend-mode: multiply;
     height: 100%;
@@ -222,7 +239,8 @@ const motionHover = ref(false)
     background: url(assets/img/texture-orange.png);
     width: 100%;
     background-position: top;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     mix-blend-mode: multiply;
     height: 50vh;
     position: absolute;
@@ -235,7 +253,7 @@ const motionHover = ref(false)
     background: url(assets/img/texture-purple.png);
     width: 100%;
     background-position: left;
-    background-size: contain;
+    background-size: 30%;
     background-repeat: no-repeat;
     mix-blend-mode: multiply;
     height: 100%;

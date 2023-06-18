@@ -12,10 +12,11 @@ h1  {
     width: 60%;
     font-family: Chillax;
     font-size: 64px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 81px;
     letter-spacing: 0.02em;
     text-align: center;
+    text-transform: lowercase;
 }
 
 .wrap-h1 {
@@ -27,7 +28,22 @@ h1  {
 h2 {
     text-transform: uppercase;
     margin-bottom: 8px;
-  }
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #FB98DF;
+    background: #7000FF;
+}
+  
+::selection {
+    color: #FB98DF;
+    background: #7000FF;
+}
+
+a.gen-link:hover {
+    color: #FB98DF;
+    background: #7000FF;
+}
 
 .border-top-line {
     border-top: 1px solid black;

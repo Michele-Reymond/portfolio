@@ -3,14 +3,19 @@
 
 <template>
     <section id="me">
-        <div class="p-[42px]">
-          <div class="pb-4">
-            <p>Michèle Reymond</p>
-            <p>Rue du Maupas 11, Lausanne</p>
+        <div class="p-[42px] flex items-center pr-[200px]">
+          <img src="../assets/img/logo.png" alt="Logo" class="w-[100px] h-[100px] mr-6 rounded-full">
+          <!-- <div> -->
+            <div class="mr-8">
+              <p>Michèle Reymond</p>
+              <p>Rue du Maupas 11, Lausanne</p>
+            </div>
+            <div>
+              <p>078 737 20 19</p>
+              <a class="gen-link" href="mailto:hello@michelereymond.ch">hello@michelereymond.ch</a>
+            </div>
           </div>
-            <p>078 737 20 19</p>
-            <p>hello@michelereymond.ch</p>
-        </div>
+        <!-- </div> -->
         <div id="cv" class="p-[42px] flex justify-between">
           <div class="mr-[62px]">
             <h2>Formation</h2>
@@ -93,14 +98,18 @@
               </p>
             </div>
           </div>
-          <div>
+          <div class="w-1/2">
             <div>
               <div id="savoir-faire" class="mb-9">
                   <h2>Savoir-faire</h2>
                   <div>
                     <h3>Programmation</h3>
                     <p>
-                      HTML5, CSS3, Javascript, C, C++, Ruby, Vue.js, Typescript, Shell command line, Wordpress, Git and Github, Docker, VsCode, Unity
+                      C, C++, Ruby<br>
+                      HTML5, CSS3, Javascript, Typescript<br>
+                      Vue.js, Pinia, Wordpress, Rails, Tailwind<br>
+                      Git and Github, Shell command line, VsCode, Docker<br>
+                      Unity
                     </p>
                   </div>
                   <div>
@@ -113,7 +122,9 @@
                   <div>
                     <h3>+</h3>
                     <p>
-                      MacOs, Notion, Trello, Scrum<br>
+                      MacOs<br>
+                      Notion, Trello<br>
+                      Scrum<br>
                       Français: langue maternelle<br>
                       Allemand et anglais: bon oral et écrit<br>
                       Suisse allemand: compréhension de base
