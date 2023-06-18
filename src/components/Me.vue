@@ -111,9 +111,12 @@
                     </p>
                   </div>
                   <div>
-                    <h3>More</h3>
+                    <h3>+</h3>
                     <p>
-                      MacOs, Notion, Trello
+                      MacOs, Notion, Trello, Scrum<br>
+                      Français: langue maternelle<br>
+                      Allemand et anglais: bon oral et écrit<br>
+                      Suisse allemand: compréhension de base
                     </p>
                   </div>
                 </div>
@@ -139,6 +142,12 @@
                       RTS_C - Réalisation d’une fresque filmée - Fribourg - 28 juillet 2021
                     </p>
                   </div>
+                  <div>
+                    <h3>+</h3>
+                    <p>
+                      Fondatrice du collectif ;nclude qui à pour but d'encourager les femmes dans la tech
+                    </p>
+                  </div>
                 </div>
             </div>
           </div>
@@ -156,10 +165,5 @@
   #cv p {
     margin-bottom: 12px;
     color: gray;
-  }
-
-  h2 {
-    text-transform: uppercase;
-    margin-bottom: 22px;
   }
 </style>

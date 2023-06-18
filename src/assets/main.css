@@ -8,6 +8,31 @@ body {
     font-family: Chillax;
 }
 
+h1  {
+    width: 60%;
+    font-family: Chillax;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 81px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.wrap-h1 {
+    font-size: 34px;
+    font-weight: 400;
+    text-align: left;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+.border-top-line {
+    border-top: 1px solid black;
+}
+
 .cross {
     position: absolute;
     right: 32px;
@@ -34,4 +59,8 @@ body {
   }
   .cross:after {
     transform: rotate(-45deg);
+  }
+
+  .black-cross:before, .black-cross:after  {
+    background-color: #000000;
   }

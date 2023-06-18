@@ -23,14 +23,12 @@ const motionHover = ref(false)
   <main>
     <!-- Main text -->
     <div class="flex justify-center items-center min-h-screen absolute">
-      <h1>Hello! Moi c'est 
-      <a class="home-link" id="michele" href="#" @click="meShow = !meShow" @mouseover="meHover = true" @mouseout="meHover = false">Michèle</a>
-        .<br> Je fais du 
+      <h1>Hello!<br>Moi c'est 
+      <a class="home-link" id="michele" href="#" @click="meShow = !meShow" @mouseover="meHover = true" @mouseout="meHover = false">Michèle</a>.<br> Je fais du 
         <a class="home-link" id="motion" href="#" @click="motionShow = !motionShow" @mouseover="motionHover = true" @mouseout="motionHover = false">motion</a>, de 
         <a id="illu" class="home-link" href="#" @click="illuShow = !illuShow" @mouseover="illuHover = true" @mouseout="illuHover = false">l'illu</a>
          et de la 
-         <a id="prog" class="home-link" href="#" @click="progShow = !progShow" @mouseover="progHover = true" @mouseout="progHover = false">prog</a>
-         .
+         <a id="prog" class="home-link" href="#" @click="progShow = !progShow" @mouseover="progHover = true" @mouseout="progHover = false">prog</a>.
       </h1>
     </div>
 
@@ -62,12 +60,12 @@ const motionHover = ref(false)
     </Transition>
     <transition name="show-prog">
       <div v-if="progShow">
-        <div class="cross" @click="progShow = !progShow"></div>
+        <div class="cross black-cross" @click="progShow = !progShow"></div>
         <Prog/>
       </div>
     </transition>
 
-    <!-- ProgMotion -->
+    <!-- Motion -->
     <Transition name="motion-texture">
         <div id="texture-motion" v-if="motionHover"></div>
     </Transition>
@@ -162,18 +160,6 @@ const motionHover = ref(false)
   .motion-texture-enter-from,
   .motion-texture-leave-to {
     opacity: 0;
-  }
-
-
-  /* Main text */
-  h1  {
-    width: 70%;
-    font-family: Chillax;
-    font-size: 64px;
-    font-weight: 600;
-    line-height: 89px;
-    letter-spacing: 0.02em;
-    text-align: center;
   }
 
   .home-link {
