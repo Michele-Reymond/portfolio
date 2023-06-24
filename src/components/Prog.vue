@@ -3,13 +3,21 @@
 </script>
 
 <template>
-    <section id="prog-container" class="flex items-center">
-      <div class="mix-blend-multiply h-full mr-[42px]">
-        <Vue3Lottie :animationData="ProgJSON" :height="`100%`" />
+    <section id="prog-container" class="flex min-h-screen">
+      <div class="mix-blend-multiply mr-[42px] min-h-screen max-w-[42%] truncate">
+        <Vue3Lottie :animationData="ProgJSON" />
       </div>
-      <div class="w-[50%]">
+      <div class="w-[50%] flex flex-col justify-center">
         <h1 class="wrap-h1">Programmation</h1>
-        <p class="mb-[82px] pl-[42px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="mb-[82px] pl-[42px]">Après plusieurs année à exercer comme graphiste et à collaborer avec des développeurs, je me rend compte que c’est un métier qui m’attire. <br>
+
+Si lors de mon bachelor j’ai eu quelques cours de code et de web, en 2020 je décide de me former plus sérieusement au développement web et je fais le bootcamp du Wagon où j’y apprend Ruby et Rails. <br>
+
+Je continue mon parcours dans le web en réalisant des thèmes Wordpress customisé et en 2021 je tente le concours d’entrée de 42 sur un mois et au terme duquel je suis sélectionnée. <br>
+
+Lors de ma formation j’apprend la programmation en C et l’orienté objet en C++ avec des projets passionnants tels que la création d’une librairie, d’un jeu, d’un algorithme de tri, d’un shell, d’un programme de raytracing, d’un serveur web, mais également la mise en place d’une machine virtuelle, la théorie sur les réseaux et l’utilisation de Docker. <br>
+
+En 2023 je fonde je collectif ;nclude qui à pour but d’encourager les femmes dans la tech.</p>
         <div class="flex h-[360px] mb-6">
           <div class="mb-[82px] w-full mr-3">
             <div id="website-links" class="flex flex-col mb-6">
@@ -52,7 +60,7 @@
 <style scoped>
   #prog-container {
     background: #FF7A00;
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
     position: absolute;
   }

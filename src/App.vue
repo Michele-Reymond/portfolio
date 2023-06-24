@@ -53,7 +53,7 @@ const motionHover = ref(false)
     </Transition>
     <transition name="show-illu">
       <div v-if="illuShow">
-        <div class="cross" @click="illuShow = !illuShow"></div>
+        <div class="cross black-cross" @click="illuShow = !illuShow"></div>
         <Illu/>
       </div>
     </transition>
@@ -181,13 +181,6 @@ const motionHover = ref(false)
     font-family: Ahsing;
     text-transform: lowercase;
     letter-spacing: 3px;
-    /* color: white; */
-    /* -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black; */
-    
-    /* color: white;
-    text-decoration: underline;
-    text-decoration-thickness: 12px; */
   }
 
   #motion:hover {
