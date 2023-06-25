@@ -3,11 +3,11 @@
 </script>
 
 <template>
-    <section id="prog-container" class="flex min-h-screen">
-      <div class="mix-blend-multiply mr-[42px] min-h-screen max-w-[42%] truncate">
+    <section id="prog-container" class="flex min-h-screen h-auto m-mobile-column">
+      <div id="prog-video" class="mix-blend-multiply h-screen truncate fixed mobile-prog-video">
         <Vue3Lottie :animationData="ProgJSON" />
       </div>
-      <div class="w-[50%] flex flex-col justify-center">
+      <div class="w-[90%] flex flex-col justify-center pl-[38%] mobile-prog-text">
         <h1 class="wrap-h1">Programmation</h1>
         <p class="mb-[82px] pl-[42px]">Après plusieurs année à exercer comme graphiste et à collaborer avec des développeurs, je me rend compte que c’est un métier qui m’attire. <br>
 
@@ -18,7 +18,7 @@ Je continue mon parcours dans le web en réalisant des thèmes Wordpress customi
 Lors de ma formation j’apprend la programmation en C et l’orienté objet en C++ avec des projets passionnants tels que la création d’une librairie, d’un jeu, d’un algorithme de tri, d’un shell, d’un programme de raytracing, d’un serveur web, mais également la mise en place d’une machine virtuelle, la théorie sur les réseaux et l’utilisation de Docker. <br>
 
 En 2023 je fonde je collectif ;nclude qui à pour but d’encourager les femmes dans la tech.</p>
-        <div class="flex h-[360px] mb-6">
+        <div class="flex h-[360px] mb-6 m-mobile-column m-mobile-link">
           <div class="mb-[82px] w-full mr-3">
             <div id="website-links" class="flex flex-col mb-6">
               <h2>42</h2>
@@ -52,7 +52,7 @@ En 2023 je fonde je collectif ;nclude qui à pour but d’encourager les femmes 
             </div>
           </div>
         </div>
-        <p class="text-sm">* réalisé en tant qu'employée chez Up to you</p>
+        <p class="text-sm mb-9">* réalisé en tant qu'employée chez Up to you</p>
       </div>
     </section>
 </template>
@@ -68,4 +68,21 @@ En 2023 je fonde je collectif ;nclude qui à pour but d’encourager les femmes 
   #website-links a:hover {
     margin-bottom: 5px;
   }
+
+  @media screen and (max-width: 650px) {
+    #prog-container, #prog-video {
+      position: relative;
+    }
+
+    .mobile-prog-text {
+      width: 100%;
+      padding: 0 20px;
+      padding-top: 22px;
+    }
+
+    .m-mobile-link {
+      height: fit-content;
+    }
+  }
+
 </style>

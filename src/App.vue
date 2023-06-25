@@ -6,33 +6,49 @@ import Motion from './components/Motion.vue'
 
 import { ref } from 'vue'
 
-const meShow = ref(false)
+import { useScreen } from 'vue-screen'
+
+const screen = useScreen()
+
+let meShow = ref(false)
 const meHover = ref(false)
 
-const illuShow = ref(false)
+let illuShow = ref(false)
 const illuHover = ref(false)
 
-const progShow = ref(false)
+let progShow = ref(false)
 const progHover = ref(false)
 
-const motionShow = ref(false)
+let motionShow = ref(false)
 const motionHover = ref(false)
+
+let introText
+
+if (screen.width < 650) {
+  meShow.value = true
+  illuShow.value = true
+  progShow.value = true
+  motionShow.value = true
+  introText = true
+}
 </script>
 
 <template>
   <main>
     <!-- Main text -->
-    <div class="flex justify-center items-center min-h-screen absolute">
-      <div class="flex flex-col justify-center items-center">
-        <h1>Hello!</h1>
-        <h1 class="h-[79px]">Moi c'est 
-        <a class="home-link" id="michele" href="#" @click="meShow = !meShow" @mouseover="meHover = true" @mouseout="meHover = false">Michèle</a>.</h1>
-        <h1>Je fais du 
-          <a class="home-link" id="motion" href="#" @click="motionShow = !motionShow" @mouseover="motionHover = true" @mouseout="motionHover = false">motion</a>, de 
-          <a id="illu" class="home-link" href="#" @click="illuShow = !illuShow" @mouseover="illuHover = true" @mouseout="illuHover = false">l'illu</a>
-           et de la 
-           <a id="prog" class="home-link" href="#" @click="progShow = !progShow" @mouseover="progHover = true" @mouseout="progHover = false">prog</a>.
-        </h1>
+    <div v-if="!introText">
+      <div class="flex justify-center items-center min-h-screen absolute">
+        <div class="flex flex-col justify-center items-center">
+          <h1>Hello!</h1>
+          <h1 class="h-[79px]">Moi c'est 
+          <a class="home-link" id="michele" href="#" @click="meShow = !meShow" @mouseover="meHover = true" @mouseout="meHover = false">Michèle</a>.</h1>
+          <h1>Je fais du 
+            <a class="home-link" id="motion" href="#" @click="motionShow = !motionShow" @mouseover="motionHover = true" @mouseout="motionHover = false">motion</a>, de 
+            <a id="illu" class="home-link" href="#" @click="illuShow = !illuShow" @mouseover="illuHover = true" @mouseout="illuHover = false">l'illu</a>
+             et de la 
+             <a id="prog" class="home-link" href="#" @click="progShow = !progShow" @mouseover="progHover = true" @mouseout="progHover = false">prog</a>.
+          </h1>
+        </div>
       </div>
     </div>
 
@@ -134,7 +150,7 @@ const motionHover = ref(false)
   }
   .show-prog-enter-from,
   .show-prog-leave-to {
-      transform: translateY(-100vh);
+      transform: translateY(-150vh);
   }
 
   .prog-texture-enter-active,

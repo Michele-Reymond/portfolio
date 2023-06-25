@@ -3,7 +3,7 @@
 
 <template>
     <section id="me">
-        <div class="p-[42px] flex items-center pr-[200px]">
+        <div class="p-[42px] flex items-center pr-[200px] m-mobile-column m-mobile-contact">
           <img src="../assets/img/logo.png" alt="Logo" class="w-[100px] h-[100px] mr-6 rounded-full">
           <!-- <div> -->
             <div class="mr-8">
@@ -16,7 +16,7 @@
             </div>
           </div>
         <!-- </div> -->
-        <div id="cv" class="p-[42px] flex justify-between">
+        <div id="cv" class="p-[42px] flex justify-between m-mobile-column">
           <div class="mr-[62px]">
             <h2>Formation</h2>
             <div id="formation">
@@ -132,29 +132,8 @@
                   </div>
                 </div>
               <div id="realisations">
-                  <h2>Réalisations</h2>
                   <div>
-                    <h3>Expositions</h3>
-                    <p>
-                      Social Thursday’s! - Impact Hub à Lausanne - 19 avril 2018 <br>
-                      Kreatür - L’étagère à Lausanne - 10 au 31 janvier 2020<br>
-                      #0 | chouette! - Maison Noctua à Fribourg - 12 septembre 2020
-                    </p>
-                  </div>
-                  <div>
-                    <h3>Fresques</h3>
-                    <p>
-                      Grève des femmes Fribourg - Fresque sur papier - 8 juin 2019<br>
-                      Vision Art Festival - 1er  prix du concours - Crans-Montana - 27 juillet 2019<br>
-                      Urban Art Velodrome - Fresque au sol - Genève - Juillet 2020<br>
-                      Vision Art Festival - Fresque murale - Crans-Montana - Août 2020<br>
-                      Up to you - Fresque décoratives pour des bureaux - Fribourg - Novembre 2020<br>
-                      Pollen festival - Fresque sur vitrine - Sion - 4 juillet 2021<br>
-                      RTS_C - Réalisation d’une fresque filmée - Fribourg - 28 juillet 2021
-                    </p>
-                  </div>
-                  <div>
-                    <h3>+</h3>
+                    <h3>++</h3>
                     <p>
                       Fondatrice du collectif ;nclude qui à pour but d'encourager les femmes dans la tech
                     </p>
@@ -176,5 +155,27 @@
   #cv p {
     margin-bottom: 12px;
     color: gray;
+  }
+
+  @media screen and (max-width: 650px) {
+    #me {
+      position: relative;
+    }
+
+    .m-mobile-contact {
+      padding: 0;
+      padding-top: 42px;
+    }
+    
+    .m-mobile-contact img {
+      margin-right: 0;
+      margin-bottom: 42px;
+    }
+
+    .m-mobile-contact div {
+      width: 100%;
+      padding-left: 42px;
+      margin-bottom: 22px;
+    }
   }
 </style>

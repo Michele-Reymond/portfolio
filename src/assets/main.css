@@ -41,16 +41,9 @@ h2 {
 }
 
 a.gen-link:hover {
-    /* color: #FB98DF;
-    background: #7000FF; */
     color: #FB98DF;
-    text-decoration: wavy underline;
-    text-decoration-thickness: 6px;
-    text-underline-offset: 8px;
-}
-
-a.gen-link.purple:hover {
-  color: #7000FF;
+    background: #7000FF;
+    color: #FB98DF;
 }
 
 .border-top-line {
@@ -87,4 +80,25 @@ a.gen-link.purple:hover {
 
   .black-cross:before, .black-cross:after  {
     background-color: #000000;
+  }
+
+  @media screen and (max-width: 650px) {
+    .cross {
+      display: none;
+    }
+
+    h1  {
+      width: 80%;
+      font-family: Chillax;
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: 0.02em;
+      text-align: center;
+      text-transform: lowercase;
+    }
+
+    .m-mobile-column {
+      flex-direction: column;
+    }
   }
