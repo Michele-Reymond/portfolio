@@ -1,8 +1,9 @@
+@import './font/chillax.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import './font/chillax.css';
 
 body {
     background: #E3DFE5; 
