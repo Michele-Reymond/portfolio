@@ -3,8 +3,8 @@
 </script>
 
 <template>
-    <section id="prog-container" class="flex min-h-screen h-auto m-mobile-column">
-      <div id="prog-video" class="mix-blend-multiply h-screen truncate fixed mobile-prog-video">
+    <section id="prog-container" class="min-h-screen h-auto m-mobile-column">
+      <div id="prog-video" class="w-[33%] mix-blend-multiply fixed mobile-prog-video">
         <Vue3Lottie :animationData="ProgJSON" />
       </div>
       <div class="w-[90%] flex flex-col justify-center pl-[38%] mobile-prog-text">
@@ -60,7 +60,6 @@ En 2023 je fonde je collectif ;nclude qui à pour but d’encourager les femmes 
 <style scoped>
   #prog-container {
     background: #FF7A00;
-    height: fit-content;
     width: 100vw;
     position: absolute;
   }
@@ -72,6 +71,10 @@ En 2023 je fonde je collectif ;nclude qui à pour but d’encourager les femmes 
   @media screen and (max-width: 650px) {
     #prog-container, #prog-video {
       position: relative;
+    }
+
+    #prog-video {
+      width: 100%;
     }
 
     .mobile-prog-text {

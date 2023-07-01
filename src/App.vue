@@ -142,15 +142,15 @@ if (screen.width < 650) {
   }
 
 
-    /* Animation for programmation */
-    .show-prog-enter-active,
+  /* Animation for programmation */
+  .show-prog-enter-active,
   .show-prog-leave-active {
-      transform: translateY(0);
+      transform: translateX(0);
       transition: all .8s ease;
   }
   .show-prog-enter-from,
   .show-prog-leave-to {
-      transform: translateY(-150vh);
+      transform: translateX(-100vw);
   }
 
   .prog-texture-enter-active,
@@ -165,12 +165,12 @@ if (screen.width < 650) {
     /* Animation for motion design */
     .show-motion-enter-active,
   .show-motion-leave-active {
-      transform: translateX(0);
+      transform: translateY(0);
       transition: all .8s ease;
   }
   .show-motion-enter-from,
   .show-motion-leave-to {
-      transform: translateX(-100vw);
+      transform: translateY(-100vh);
   }
 
   .motion-texture-enter-active,
@@ -217,6 +217,10 @@ if (screen.width < 650) {
     background-color: #FF7A00;
   }
 
+  #prog{
+    top: 0;
+  }
+
   #texture-cv {
     background: url(assets/img/texture-black.png);
     width: 100%;
@@ -247,20 +251,6 @@ if (screen.width < 650) {
   #texture-prog {
     background: url(assets/img/texture-orange.png);
     width: 100%;
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    mix-blend-mode: multiply;
-    height: 50vh;
-    position: absolute;
-    top: 0;
-    transition: all .5s ease;
-    z-index: -1;
-  }
-
-  #texture-motion {
-    background: url(assets/img/texture-purple.png);
-    width: 100%;
     background-position: left;
     background-size: 30%;
     background-repeat: no-repeat;
@@ -268,6 +258,21 @@ if (screen.width < 650) {
     height: 100%;
     position: absolute;
     bottom: 0;
+    transition: all .5s ease;
+    z-index: -1;
+  }
+
+  #texture-motion {
+    background: url(assets/img/texture-purple.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+    height: 50vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     transition: all .5s ease;
     z-index: -1;
   }

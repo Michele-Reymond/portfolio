@@ -4,16 +4,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Ahsing';
+  src: url('./font/font.woff2') format('woff2'),
+       url('./font/font.woff') format('woff');
+}
+
 
 body {
     background: #E3DFE5; 
     margin: 0;
-    font-family: Chillax;
+    font-family: 'Chillax-Regular';
 }
 
 h1  {
     width: 60%;
-    font-family: Chillax;
+    font-family: 'Chillax-Bold';
     font-size: 64px;
     font-weight: 700;
     line-height: 81px;
@@ -92,7 +98,7 @@ a.gen-link:hover {
 
     h1  {
       width: 80%;
-      font-family: Chillax;
+      font-family: 'Chillax-Bold';
       font-size: 34px;
       font-weight: 700;
       line-height: 42px;
