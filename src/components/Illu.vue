@@ -10,7 +10,10 @@
       </div>
       <div class="w-[50%] flex flex-col justify-center pb-9 illu-mobile-text">
         <h1 class="wrap-h1">Illustration</h1>
-        <p class="mb-[62px] pl-[42px]">Depuis 2017 je réalise des mandats d’illustration pour des clients ou je développe des projets personnels. J’ai participé à plusieurs expositions collectives et j’ai réalisé plusieurs fresques murales.</p>
+        <p class="mb-[62px] pl-[42px]">Depuis 2017 je réalise des mandats d’illustration pour des clients et je développe des projets personnels. Que ce soit pour un projet commerciale ou éditoriale je suis toujours heureuse d’inventer de nouvelles formes et combinaisons de couleurs. J’ai également participé à plusieurs expositions collectives et j’ai réalisé plusieurs fresques murales.</p>
+        <h2>Découvrir mes réalisations</h2>
+        <a class="gen-link purple" href="https://www.behance.net/michelereymond">> Behance</a>
+        <a class="gen-link purple mb-6" href="https://www.instagram.com/michele.reymond/">> Instagram</a>
         <div class="">
             <div class="mb-[82px] w-full mr-3">
               <div id="website-links" class="flex flex-col mb-6">
@@ -37,8 +40,6 @@
               </div>
             </div>
           </div>
-        <a class="gen-link purple" href="https://www.behance.net/michelereymond">Découvrir mes réalisations sur Behance</a>
-        <a class="gen-link purple" href="https://www.instagram.com/michele.reymond/">Ou sur Instagram</a>
       </div>
     </section>
 </template>

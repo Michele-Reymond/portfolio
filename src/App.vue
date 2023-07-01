@@ -37,7 +37,7 @@ if (screen.width < 650) {
   <main>
     <!-- Main text -->
     <div v-if="!introText">
-      <div class="flex justify-center items-center min-h-screen absolute">
+      <div class="flex justify-center items-center min-h-screen absolute w-full">
         <div class="flex flex-col justify-center items-center">
           <h1>Hello!</h1>
           <h1 class="h-[79px]">Moi c'est 
@@ -248,7 +248,7 @@ if (screen.width < 650) {
     background: url(assets/img/texture-orange.png);
     width: 100%;
     background-position: top;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     mix-blend-mode: multiply;
     height: 50vh;

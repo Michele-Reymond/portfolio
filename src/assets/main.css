@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './font/chillax.css';
+
 body {
     background: #E3DFE5; 
     margin: 0;

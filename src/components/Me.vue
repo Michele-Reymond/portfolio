@@ -133,9 +133,10 @@
                 </div>
               <div id="realisations">
                   <div>
-                    <h3>++</h3>
+                    <h2>Collectif</h2>
                     <p>
-                      Fondatrice du collectif ;nclude qui à pour but d'encourager les femmes dans la tech
+                      Fondatrice du collectif <a class="gen-link" href="https://www.instagram.com/collectif_include/">;nclude</a> qui à pour but d'encourager les femmes dans la tech.<br>
+                      Co-fondatrice du collectif artistique <a class="gen-link" href="https://www.maisonnoctua.ch/">Maison Noctua</a> à Fribourg.
                     </p>
                   </div>
                 </div>
@@ -150,6 +151,7 @@
     color: white;
     background-color: black;
     position: absolute;
+    width: 100%;
   }
 
   #cv p {
@@ -160,6 +162,12 @@
   @media screen and (max-width: 650px) {
     #me {
       position: relative;
+    }
+
+    #cv div {
+      margin-right: 0;
+      margin-bottom: 22px;
+      width: 100%;
     }
 
     .m-mobile-contact {
@@ -173,6 +181,7 @@
     }
 
     .m-mobile-contact div {
+      align-self: flex-start;
       width: 100%;
       padding-left: 42px;
       margin-bottom: 22px;
